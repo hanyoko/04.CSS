@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .color1 {
+            background-color: lightblue;
+            /* grid-area: a; */
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+        .color2 {
+            background-color: lightgreen;
+            /* grid-area: b; */
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+        }
+        .color3 {
+            background-color: lightyellow;
+            /* grid-area: c; */
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+        }
+        .color4 {
+            background-color: lightsalmon;
+            /* grid-area: d; */
+            grid-row: 3 / 4;
+            grid-column: 2 / 3;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 100px);
+            /* grid-template-areas:
+            "a . ."
+            "b b b"
+            "c d ."
+            ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="color1">1</div>
+        <div class="color2">2</div>
+        <div class="color3">3</div>
+        <div class="color4">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 10px;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            transition: 10s; /* hover 값에 주면 마우스를 올릴 때만 적용되고 마우스를 올리지 않으면 시간간격없이 돌아가서 자연스럽지않다. */
+            position: absolute;
+            left: 500px;
+            top: 500px;
+        }
+        div:hover {
+            transform: rotateX(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

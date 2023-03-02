@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        #wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            list-style: none;
+            background-color: aqua;
+            border: 3px solid #333;
+            height: 200px;      
+            width: 25%;
+        }
+        @media screen and (max-width: 1024px) {
+            li {
+               width: 33.33333%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            li {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- div>ul>li{list$}*12 -->
+    <div id="wrap">
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+            <li>list6</li>
+            <li>list7</li>
+            <li>list8</li>
+            <li>list9</li>
+            <li>list10</li>
+            <li>list11</li>
+            <li>list12</li>
+        </ul>
+    </div>
+</body>
+</html>

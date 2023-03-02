@@ -1,0 +1,92 @@
+.inner_con {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#header h1 {
+    float: left;
+    font-size: 36px;
+    padding: 20px;
+}
+#header ul {
+    float: right;
+}
+#header ul li {
+    float: left;
+    padding: 0 20px;
+}
+.clearboth::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#contents_top {
+    width: 1100px;
+    vertical-align: top;
+}
+h2 {
+    font-size: 40px;
+    color: #3f51b5;
+}
+#weare_title {
+    padding: 80px 0;
+}
+#weare h2 {
+    float: left;
+    padding-right: 150px;
+    border-right: 5px solid #ccc;
+    line-height: 30px;
+}
+#weare_title p {
+    float: right;
+}
+#weare ul {
+    text-align: center;
+    padding: 0 30px;
+}
+#weare ul li {
+    float: left;
+    padding: 30px 0;
+    width: 25%;
+}
+#weare ul li img {
+    height: 60px;
+}
+#weare h3 {
+    color: #3f51b5;
+    padding: 25px 0;
+}
+#weare p {
+    font-size: 14px;
+}
+#work ul li {
+    float: left;
+    width: 25%;
+}
+#work  {
+    padding-top: 150px;
+}
+#work h2 {
+    padding: 30px 0;
+}
+#blog h2 {
+    float: left;
+    width: 30%
+}
+#blog ul {
+    float: left;
+    width: 70%;
+}
+#blog ul li {
+    float: left;
+    text-align: left;
+}
+#blog ul li img {
+    height: 250px;
+}
+#blog ul li:not(:nth-child(3)) {
+    padding-right: 10px;
+}
+#blog {
+    
+}

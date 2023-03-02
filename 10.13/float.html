@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li { 
+            float: left;
+            background: pink;
+        }
+        #clear::after {
+            content: "";
+            display: block;
+            clear: left;
+        }
+        #box div {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="clear">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+        <div id="box" class="clear"> div입니다.
+            <div>box1</div>
+            <div>boxu2</div>
+            <div>box3</div>
+        </div>
+    </div>
+</body>
+</html>

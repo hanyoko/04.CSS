@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        a { text-decoration: none; color:inherit; }
+        li { list-style: none; }
+        h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+        #wrap {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        header ul {
+            display: flex;
+            align-items: center;
+        }
+        header ul li {
+            padding: 0 30px;
+        }
+        .down {
+            display: none;
+        }
+        header ul li:hover .down {
+            display: block;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>green</h1>
+            <ul>
+                <li>
+                    <div class="up">menu1</div>
+                    <div class="down">서브메뉴1</div>
+                </li>
+                <li>
+                    <div class="up">menu2</div>
+                    <div class="down">서브메뉴2</div>
+                </li>
+                <li>
+                    <div class="up">menu3</div>
+                    <div class="down">서브메뉴3</div>
+                </li>
+                <li>
+                    <div class="up">menu4</div>
+                    <div class="down">서브메뉴4</div>
+                </li>
+            </ul>
+        </header>
+    </div>
+</body>
+</html>
